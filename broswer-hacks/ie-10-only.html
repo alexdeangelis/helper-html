@@ -1,0 +1,15 @@
+<!--USE THIS SCRIPT IN THE HEADER-->
+
+<script>
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+</script>
+
+<!--THEN USE THIS IN YOUR STYLESHEET-->
+<!--.mobile-container USED AS AN EXAMPLE-->
+
+<style>
+    html[data-useragent*='MSIE 10.0'] .mobile-container {
+      display:block;
+    }
+</style>
